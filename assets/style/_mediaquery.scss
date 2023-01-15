@@ -1,0 +1,56 @@
+@keyframes boton {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 8px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes boton {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 8px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+
+/*responsive en "sobre mí"*/
+@media only screen and (min-width: 1024px) {
+
+  #contenedor {
+    margin: 0% 0% 0%;
+    background-color: $color-nav;
+    padding-left: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+
+
+    "titulo container-fluid";
+
+
+  }
+
+  .container-fluid{
+    align-items:flex-end;
+    margin: 0%;
+  }
+
+
+  #icon {
+    width: 200px;
+  }
+
+}
+
