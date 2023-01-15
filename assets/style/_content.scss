@@ -22,8 +22,9 @@ body {
   
 #titulo {
   font-size: 40px;
+  padding-left: 60px;
   color: $color-titulo;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Quicksand', sans-serif;
 }
  
 
@@ -52,6 +53,39 @@ nav {
   }
 }
 
+/*inicio*/
+
+.inicio-container{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+  padding-bottom: 10%;
+
+  .titulo__{
+    font-size: 100px;
+    text-align: center;
+  }
+
+  #texto-secundario{
+    text-align: center;
+    font-size: 30px;
+    color: $color-auxiliar;
+  }
+  
+
+  .imagen{
+    justify-self: center;
+    align-items: center;
+
+   #dibujo-inicio{
+    width: 600px;
+  } 
+  }
+  
+}
 
 
 
@@ -59,7 +93,7 @@ nav {
 
 .info__contenedor{
   margin: 150px;
-  padding-bottom: 20px;
+  padding-bottom: 10%;
   padding-top: 20px;
   text-align: justify;
   padding-left: 20px;
@@ -73,6 +107,7 @@ nav {
   text-align: center;
   border-radius: $borde;
   padding: 20px;
+  padding-bottom: 10%;
 
   .lista__contacto {
     color: $color-fondo;
@@ -121,14 +156,60 @@ button {
 /*tienda*/
 
 #texto_tienda{
-  margin-top: 20px;
+  margin-top: 10%;
   padding: 50px;
   text-align: center;
+  padding-bottom: 50%;
 
   #icon-2 {
   width: 150px;
 }
 }
+
+/*galería*/
+
+.container-text-center{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2fr 2fr ;
+  gap: 20px;
+  align-items: center;
+  justify-items:stretch;
+  grid-template-areas: 
+
+  "col-1 col-2"
+  "col-3 col-4"
+  "col-5 col-6"
+  "col-7 col-8"
+  "col-9 col-9"
+
+  ;
+  
+}
+
+.row{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-evenly;
+
+}  
+
+.col{
+  align-items: center;
+  width: 200px;
+  border-radius: $borde;
+}
+
+img{
+  width: 200px;
+  border-radius: $borde;
+}
+  
 
 
 

@@ -52,5 +52,53 @@
     width: 200px;
   }
 
+  .container-text-center{
+    padding-bottom: 10%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:3fr 3fr 3fr ;
+    align-items: center;
+    justify-items:stretch;
+    gap: 20px;
+    grid-template-areas: 
+
+    "row"
+    "row"
+    "row"
+    ;
+    
+  }
+
+  .row{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    align-content:space-between;
+    gap:50px
+    
+
+  }  
+
+  .col{
+    width: $size-dibujos;
+    border-radius: $borde;
+    gap: 10px; 
+  }
+
+  img{
+    width: $size-dibujos;
+    border-radius: $borde;
+  }
+    
+
+
+
+    
 }
+
+
 
